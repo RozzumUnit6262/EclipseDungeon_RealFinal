@@ -1,5 +1,7 @@
 package math130.eclipsedungeon_realfinal;
 
+import javafx.scene.image.Image;
+
 public class Enemy
 {
 	// fields
@@ -11,7 +13,7 @@ public class Enemy
 	private String deathMes;
 		
 		// constructor
-	public Enemy(String n, int h, int a, int exp, String fight, String death)
+	public Enemy(String n, int h, int a, int exp, String fight, String death, Image enemy)
 		{
 			eneName = n;
 			eneHealth = h;

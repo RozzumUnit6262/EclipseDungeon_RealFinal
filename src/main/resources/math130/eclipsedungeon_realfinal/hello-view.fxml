@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="335.0" prefWidth="374.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="math130.eclipsedungeon_realfinal.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="JAVA" translateX="-120.0">
-      <font>
-         <Font name="High Tower Text" size="35.0" />
-      </font>
-   </Text>
-   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DUNGEON" translateX="-121.0" translateY="-20.0">
-      <font>
-         <Font name="High Tower Text Italic" size="19.0" />
-      </font>
-   </Text>
-   <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="100.0" translateX="-122.0" translateY="-33.0" />
-
-    <Label fx:id="welcomeText" />
-   <ImageView fitHeight="130.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" translateX="56.0" translateY="-257.0" />
-   <ButtonBar prefHeight="35.0" prefWidth="334.0" translateX="7.0" translateY="-265.0">
-     <buttons>
-       <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: ea526f;" text="Attack!" textFill="WHITE">
-            <font>
-               <Font name="High Tower Text" size="13.0" />
-            </font>
-         </Button>
-         <Button mnemonicParsing="false" style="-fx-background-color: #25ced1;" text="Defend!" textFill="WHITE">
-            <font>
-               <Font name="High Tower Text" size="13.0" />
-            </font>
-         </Button>
-     </buttons>
-   </ButtonBar>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="math130.eclipsedungeon_realfinal.GameController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="10.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+      <Text layoutX="23.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JAVA">
+         <font>
+            <Font name="High Tower Text" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DUNGEON">
+         <font>
+            <Font name="High Tower Text Italic" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="EnemyDisplay" fitHeight="126.0" fitWidth="225.0" layoutX="190.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../java/math130/eclipsedungeon_realfinal/ed_default.png" />
+         </image></ImageView>
+      <Label layoutX="151.0" layoutY="138.0" text="Damage - X">
+         <font>
+            <Font name="High Tower Text" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayHP" layoutX="294.0" layoutY="138.0" text="HP - X">
+         <font>
+            <Font name="High Tower Text" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayDialogue" alignment="TOP_CENTER" layoutX="19.0" layoutY="71.0" prefHeight="115.0" prefWidth="100.0" text="Placeholder Text" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="High Tower Text Italic" size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="getInput" layoutX="137.0" layoutY="155.0" prefHeight="35.0" prefWidth="225.0">
+         <font>
+            <Font name="High Tower Text" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

@@ -123,19 +123,19 @@ public static Enemy encounter(int i) // generates an enemy for the current floor
     // Enemy types
     Enemy bat = new Enemy("Byte Bat", 6, 2, 1,
             "The Byte Bat bytes you",
-            "The Byte Bat was deallocated from memory.");
+            "The Byte Bat was deallocated from memory.", enemyBat);
 
     Enemy slime = new Enemy("Scanner Slime", 8, 1, 2,
             "The Scanner Slime gathers your input",
-            "The Scanner Slime was closed.");
+            "The Scanner Slime was closed.", enemySlime);
 
     Enemy snake = new Enemy("Virus Viper", 8, 2, 2,
             "The Virus Viper infected you",
-            "The Virus Viper was wiped from the drive.");
+            "The Virus Viper was wiped from the drive.", enemyViper);
     // boss
     Enemy boss = new Enemy("Gigabyte Golem", 25, 5, 10,
             "The Gigabyte Golem giga-punched you",
-            "The Gigabyte Golem was recycled.");
+            "The Gigabyte Golem was recycled.", enemyBoss);
 
     Random rng = new Random(); // determines which normal enemy to be fought
     int fight = rng.nextInt(1, 4);

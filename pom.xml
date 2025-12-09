@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                math130.eclipsedungeon_realfinal/math130.eclipsedungeon_realfinal.HelloApplication
+                                math130.eclipsedungeon_realfinal/math130.eclipsedungeon_realfinal.GameApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
