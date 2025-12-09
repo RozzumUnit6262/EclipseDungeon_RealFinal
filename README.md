@@ -20,3 +20,5 @@ between base Java and JavaFX. Have a great winter break, Professor!
 Author's note 2: Exception handling is not explicitly used, as most things that could break the core project already have built-in 'guards' 
 against potential exceptions (eg. the project will not budge until one of it's commands is entered, and will realign itself if a loop or
 protocol (ex. player's health goes negative) occurs.
+
+Author's note 3: Generative AI was not used in the creation of the core project. It was, however, used to debug the JavaFX version of the project.
